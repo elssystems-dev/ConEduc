@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>ConEduc - Apresentação</title>
-    <script src="conteudoBD.js"></script>
-    <script src="conteudoPY.js"></script>
-    <script src="script.js"></script>
+    <script src="js/conteudoBD.js"></script>
+    <script src="js/conteudoPY.js"></script>
+    <script src="js/script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
             <nav>
-                    <span><a href="#" onclick="mostrarSecao('overview', event)" class="active">Visão Geral</a></span> <!-- Inclui cronograma, metodologias ageis utilizadas e desempenho de cada membro por etapa do projeto-->
-                    <span><a href="#" onclick="mostrarSecao('mer-der', event)">MER & DER</a></span>
-                    <span><a href="#" onclick="mostrarSecao('BD', event)">Banco de Dados</a></span>
-                    <span><a href="#" onclick="mostrarSecao('sitemap', event)">Site Map</a></span>
-                    <span><a href="#" onclick="mostrarSecao('institution-page', event)">Página Institucional</a></span>
-                    <span><a href="#" onclick="mostrarSecao('mockup-backend', event)">Mockup do Backend</a></span>
-                    <span><a href="#" onclick="mostrarSecao('cronograma', event)">Cronograma</a></span>
+                <span><a href="#" onclick="mostrarSecao('overview', event)" class="active">Visão Geral</a></span>
+                <!-- Inclui cronograma, metodologias ageis utilizadas e desempenho de cada membro por etapa do projeto-->
+                <span><a href="#" onclick="mostrarSecao('mer-der', event)">MER & DER</a></span>
+                <span><a href="#" onclick="mostrarSecao('BD', event)">Banco de Dados</a></span>
+                <span><a href="#" onclick="mostrarSecao('sitemap', event)">Site Map</a></span>
+                <span><a href="#" onclick="mostrarSecao('institution-page', event)">Página Institucional</a></span>
+                <span><a href="#" onclick="mostrarSecao('mockup-backend', event)">Mockup do Backend</a></span>
+                <span><a href="#" onclick="mostrarSecao('cronograma', event)">Cronograma</a></span>
+                <span><a href="#" onclick="mostrarSecao('github', event)">GitHub</a></span>
             </nav>
         </header>
 
@@ -33,14 +37,14 @@
                 <div>
                     <h2>Descrição do Projeto</h2>
                     <p>
-                        Um sistema de gestão e controle de unidade escolar é uma plataforma digital que centraliza 
-                        e automatiza os processos administrativos, acadêmicos e pedagógicos de uma instituição de 
-                        ensino, como matrículas, notas e comunicação, facilitando a gestão diária e a tomada de 
+                        Um sistema de gestão e controle de unidade escolar é uma plataforma digital que centraliza
+                        e automatiza os processos administrativos, acadêmicos e pedagógicos de uma instituição de
+                        ensino, como matrículas, notas e comunicação, facilitando a gestão diária e a tomada de
                         decisões estratégicas.
                     </p>
-                    <p> 
-                        O sistema integra diferentes setores da escola em um único lugar, 
-                        fornecendo dados para que gestores, professores, alunos e pais tenham acesso a informações 
+                    <p>
+                        O sistema integra diferentes setores da escola em um único lugar,
+                        fornecendo dados para que gestores, professores, alunos e pais tenham acesso a informações
                         importantes, como frequência, boletins e pagamentos, de forma ágil e eficiente.
                     </p>
                 </div>
@@ -57,9 +61,24 @@
             </section>
             <section id="mer-der" class="relative">
                 <div>
-                    <h2>MER & DER</h2>
+                    <h2>Modelos e Diagramas de Entidade-Relacionamento</h2>
+                    <p>Conteúdo relacionado ao Modelo Entidade-Relacionamento (MER) e Diagrama Entidade-Relacionamento
+                        (DER) do projeto.</p>
                 </div>
-                <p>Conteúdo relacionado ao Modelo Entidade-Relacionamento (MER) e Diagrama Entidade-Relacionamento (DER) do projeto.</p>
+                <h3>MER</h3>
+                <div style="display: flex; gap: 40px;">
+                    <img src="img/MER.png" alt="Modelo Entidade-Relacionamento (MER)" width="600px" />
+                    <p>Este é o MER devidamente estruturado</p>
+                </div>
+                <hr>
+                <h3>DER</h3>
+                <div style="margin-top: 20px; display: flex; gap: 40px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <img src="img/DERv1.png" alt="Diagrama Entidade-Relacionamento (DER)" width="600px" />
+                        <img src="img/DERv2.png" alt="Diagrama Entidade-Relacionamento (DER)" width="600px" />
+                    </div>
+                    <p>Estes são os DERs que representam as relações entre as entidades do sistema.</p>
+                </div>
             </section>
             <section id="BD" class="relative">
                 <div>
@@ -75,21 +94,40 @@
                 </div>
             </section>
             <section id="sitemap" class="relative">
-                <div>
-                    <h2>Site Map</h2>
+                <div class="flex" style="align-items: center;">
+                    <h2>SiteMap</h2>
+                    <img src="https://d3n817fwly711g.cloudfront.net/uploads/2023/01/creately-logo-symbol.png"
+                        alt="Creately Icon" width="100px" height="50px" />
                 </div>
-                <p>Mapa do site detalhando a estrutura de navegação e hierarquia das páginas do projeto.</p>
+                <div>
+                    <p>Link para SiteMap no Creately:
+                        <a href="https://app.creately.com/d/xt02k1FONvP/edit" target="_blank"
+                            rel="noopener noreferrer">https://app.creately.com/d/xt02k1FONvP/edit</a>
+                    </p>
+                </div>
+                <img src="img/sitemap.png" alt="Site Map" style="display: block; margin: 0 auto;">
             </section>
             <section id="institution-page" class="relative">
                 <div>
                     <h2>Página Institucional</h2>
+                    <p>Exibição do conteúdo atual das páginas institucionais do projeto.</p>
                 </div>
-                <p>Descrição e detalhes da página institucional do projeto, incluindo missão, visão e valores.</p>
+                <div>
+                    <h3>Página de Login</h3>
+                    <iframe src="pages/login.html" width="100%" height="600px"
+                        style="border-color: black; border-radius: 5px;"></iframe>
+                </div>
+                <div>
+                    <h3>Página Principal</h3>
+                    <iframe src="pages/index.html" width="100%" height="600px"
+                        style="border-color: black; border-radius: 5px;"></iframe>
+                </div>
             </section>
             <section id="mockup-backend" class="relative">
                 <div>
                     <h2>Mockup do Backend</h2>
-                    <p>Arquivos protótipo funcionais do backend do sistema, exibindo uma noção de como seria a aplicação real.</p>
+                    <p>Arquivos protótipo funcionais do backend do sistema, exibindo uma noção de como seria a aplicação
+                        real.</p>
                 </div>
                 <h3>Autenticação de Usuário</h3>
                 <div class="codigo">
@@ -104,7 +142,9 @@
                     <pre id="py-main-code"></pre>
                 </div>
                 <div style="text-align: center;">
-                    <button onclick="window.location.href='vscode://file/D:/Instituições/SENAI/Desenvolvimento de Sistemas/2o Termo/Projeto de Software/TCC/presentation/python/main.py'" class="vscode">Testar no VS Code</button>
+                    <button
+                        onclick="window.location.href='vscode://file/F:/Instituições/SENAI/Desenvolvimento de Sistemas/2o Termo/Projeto de Software/TCC/presentation/python/main.py'"
+                        class="vscode">Testar no VS Code</button>
                 </div>
             </section>
             <section id="cronograma" class="relative">
@@ -115,12 +155,30 @@
                 <div style="position: relative; width: 100%; height: 100%; padding-top: 50.4708%;
                 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
                 border-radius: 8px; will-change: transform;">
-                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                    src="https://www.canva.com/design/DAGzKX-C9M8/BaXZ2PLOR-Li5q4gJ_Y8Eg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                </iframe>
+                    <iframe loading="lazy"
+                        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAGzKX-C9M8/BaXZ2PLOR-Li5q4gJ_Y8Eg/view?embed"
+                        allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
                 </div>
+            </section>
+            <section id="github" class="relative">
+                <div class="flex">
+                    <h2>Repositório no GitHub</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub Logo" width="70px" />
+                </div>
+                <div>
+                    <p>Link para o repositório do projeto no GitHub:
+                        <a href="https://github.com/LarissaNicodemo/TCC---Controle-de-Unidade-Escolar" target="_blank"
+                            rel="noopener noreferrer">https://github.com/LarissaNicodemo/TCC---Controle-de-Unidade-Escolar</a>
+                    </p>
+                </div>
+                <iframe src="https://github1s.com/LarissaNicodemo/TCC---Controle-de-Unidade-Escolar" width="100%"
+                    height="600px" style="border:none;">
+                </iframe>
             </section>
         </main>
     </div>
 </body>
+
 </html>
