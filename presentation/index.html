@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ConEduc - Apresentação</title>
+    <script src="conteudoBD.js"></script>
+    <script src="conteudoPY.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                    <span><a href="#" onclick="mostrarSecao('overview', event)" class="active">Visão Geral</a></span> <!-- Inclui cronograma, metodologias ageis utilizadas e desempenho de cada membro por etapa do projeto-->
+                    <span><a href="#" onclick="mostrarSecao('mer-der', event)">MER & DER</a></span>
+                    <span><a href="#" onclick="mostrarSecao('BD', event)">Banco de Dados</a></span>
+                    <span><a href="#" onclick="mostrarSecao('sitemap', event)">Site Map</a></span>
+                    <span><a href="#" onclick="mostrarSecao('institution-page', event)">Página Institucional</a></span>
+                    <span><a href="#" onclick="mostrarSecao('mockup-backend', event)">Mockup do Backend</a></span>
+                    <span><a href="#" onclick="mostrarSecao('cronograma', event)">Cronograma</a></span>
+            </nav>
+        </header>
+
+        <main class="conteudo-principal">
+            <section id="overview" class="relative">
+                <div>
+                    <h1>Trabalho de Conclusão de Curso - ConEduc</h1>
+                    <h2>Página de Visão Geral para acompanhamento e apresentação</h2>
+                </div>
+
+                <div>
+                    <h2>Descrição do Projeto</h2>
+                    <p>
+                        Um sistema de gestão e controle de unidade escolar é uma plataforma digital que centraliza 
+                        e automatiza os processos administrativos, acadêmicos e pedagógicos de uma instituição de 
+                        ensino, como matrículas, notas e comunicação, facilitando a gestão diária e a tomada de 
+                        decisões estratégicas.
+                    </p>
+                    <p> 
+                        O sistema integra diferentes setores da escola em um único lugar, 
+                        fornecendo dados para que gestores, professores, alunos e pais tenham acesso a informações 
+                        importantes, como frequência, boletins e pagamentos, de forma ágil e eficiente.
+                    </p>
+                </div>
+                <div>
+                    <h2>Integrantes</h2>
+                    <ul>
+                        <li>Carolline</li>
+                        <li>Eduardo</li>
+                        <li>Larissa Nicodemo</li>
+                        <li>Maria Corrêa</li>
+                        <li>Pedro Bosso</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="mer-der" class="relative">
+                <div>
+                    <h2>MER & DER</h2>
+                </div>
+                <p>Conteúdo relacionado ao Modelo Entidade-Relacionamento (MER) e Diagrama Entidade-Relacionamento (DER) do projeto.</p>
+            </section>
+            <section id="BD" class="relative">
+                <div>
+                    <h2>Banco de Dados</h2>
+                </div>
+                <h3>DDL do Banco de Dados - Criação e Inserção de Tabelas</h3>
+                <div class="codigo">
+                    <pre id="ddl-code"></pre>
+                </div>
+                <h3>DML do Banco de Dados - Inserção de Dados</h3>
+                <div class="codigo">
+                    <pre id="dml-code"></pre>
+                </div>
+            </section>
+            <section id="sitemap" class="relative">
+                <div>
+                    <h2>Site Map</h2>
+                </div>
+                <p>Mapa do site detalhando a estrutura de navegação e hierarquia das páginas do projeto.</p>
+            </section>
+            <section id="institution-page" class="relative">
+                <div>
+                    <h2>Página Institucional</h2>
+                </div>
+                <p>Descrição e detalhes da página institucional do projeto, incluindo missão, visão e valores.</p>
+            </section>
+            <section id="mockup-backend" class="relative">
+                <div>
+                    <h2>Mockup do Backend</h2>
+                    <p>Arquivos protótipo funcionais do backend do sistema, exibindo uma noção de como seria a aplicação real.</p>
+                </div>
+                <h3>Autenticação de Usuário</h3>
+                <div class="codigo">
+                    <pre id="py-auth-code"></pre>
+                </div>
+                <h3>Navegação do Usuário</h3>
+                <div class="codigo">
+                    <pre id="py-user-code"></pre>
+                </div>
+                <h3>Função Principal</h3>
+                <div class="codigo">
+                    <pre id="py-main-code"></pre>
+                </div>
+                <div style="text-align: center;">
+                    <button onclick="window.location.href='vscode://file/D:/Instituições/SENAI/Desenvolvimento de Sistemas/2o Termo/Projeto de Software/TCC/presentation/python/main.py'" class="vscode">Testar no VS Code</button>
+                </div>
+            </section>
+            <section id="cronograma" class="relative">
+                <div>
+                    <h2>Cronograma</h2>
+                </div>
+                <p>Detalhes do cronograma do projeto, incluindo prazos e etapas importantes.</p>
+                <div style="position: relative; width: 100%; height: 100%; padding-top: 50.4708%;
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https://www.canva.com/design/DAGzKX-C9M8/BaXZ2PLOR-Li5q4gJ_Y8Eg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
