@@ -31,6 +31,108 @@ header nav {
     justify-content: center;
 }
 
+.integrantes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.integrantes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.integrantes div {
+    text-align: center;
+}
+
+.logos {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.logos img {
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.logos div {
+    text-align: center;
+}
+
+.docentes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.docentes img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.docentes div {
+    text-align: center;
+}
+
+.tools{
+    width: 100%;
+}
+
+.tools img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.right-tools {
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: row; 
+    gap: 40px;
+}
+
+.left-tools {
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row; 
+    gap: 40px;
+}
+
+
+.paragrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.integrantes, .tools img {
+  opacity: 0;
+  animation: fadeIn 1s linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 nav {
     overflow-x: auto;
 }
@@ -56,16 +158,6 @@ header span {
     border-radius: 5px;
 }
 
-ul {
-    list-style: none;
-    margin-left: 0;
-}
-
-ul li::before {
-    content: "➔ ";
-    margin-bottom: 10px;
-    list-style-type: none;
-}
 
 .codigo {
     background-color: #e0e0e0;
@@ -114,6 +206,9 @@ main section{
     display: none;
 }
 
+ul li {
+    list-style: none;
+}
 #overview {
     display: block;
 }
