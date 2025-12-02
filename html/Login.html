@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ConEduc</title>
-
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         body {
             font-family: arial, sans-serif;
             background-color: #dddcdc;
             padding: 20px;
-            background-image: url('imagens/loginFundoo.png');
+            background-image: url('../assets/loginFundoo.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -62,31 +62,29 @@
             background: #0056b3;
         }
     </style>
-
 </head>
 
 <body>
 
     <form id="login-form">
         <fieldset>
-            <!-- <img src="imagens/Logo-removebg-preview.png" alt="Logo"> -->
-
-            <label for="cargo">Cargo:</label>
+            <img src="imagens/Logo-removebg-preview.png" alt="Logo">
+            <label for="cargo">Cargo</label>
             <select id="tipo-de-usuario" name="vinculo" required>
-                <option value="" disabled selected></option>
-                <option value="aluno">Aluno</option>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="aluno">Aluno/Responsável</option>
                 <option value="professor">Professor</option>
-                <option value="gestor">Gestor (Diretor/Coordenador)</option>
-                <option value="pais-responsaveis">Pais/Responsáveis</option>
+                <option value="gestor">Gestor</option>
             </select>
             <br><br>
 
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite o e-mail..." required>
             <br><br>
 
-            <label for="usuario">Usuário:</label>
-            <input type="text" name="usuario" id="usuario" minlength="5" maxlength="12" required>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite a senha..." minlength="8" maxlength="30"
+                required>
             <br><br>
 
             <button type="submit">Enviar</button>
@@ -96,7 +94,6 @@
     <script>
         document.getElementById("login-form").addEventListener("submit", function (e) {
             e.preventDefault(); // Impede envio imediato
-
             // Se o form for válido:
             if (this.checkValidity()) {
                 window.location.href = "index.html"; // Redireciona

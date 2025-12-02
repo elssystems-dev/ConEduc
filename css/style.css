@@ -1,10 +1,5 @@
-body{
-    background-color: #FFF5ED;
-    margin: 0;
-    border: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 
-header{
-    background-color: #0066FF;
-    height: 15vh;
+* {
+    font-family: 'Almarai', sans-serif;
 }
